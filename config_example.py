@@ -1,0 +1,6 @@
+# Credenciales de base de datos 
+DB_HOST     = 'localhost'
+DB_PORT     = 5432
+DB_NAME     = 'pokedata'
+DB_USER     = 'your_user'
+DB_PASSWORD = 'your_password'
