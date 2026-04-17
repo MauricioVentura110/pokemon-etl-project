@@ -67,9 +67,42 @@ Para ejecutar el proyecto, se debe crear el archivo `config.py` basado en el eje
 
 ### Ejemplo de configuración (esto viene en `config_example.py`):
 
-```python id="q9m2bb"
 DB_HOST = "localhost"
 DB_PORT = 5432
 DB_NAME = "pokedata"
 DB_USER = "your_user"
 DB_PASSWORD = "your_password"
+
+---
+
+## 🗄️ Configuración de la base de datos (PostgreSQL)
+
+Para ejecutar el proyecto desde cero, es necesario crear la base de datos, el usuario y la tabla correspondiente.
+
+> ⚠️ Reemplazar `testanalyst` y la contraseña por las propias credenciales locales.
+
+---
+
+### 1. Crear usuario y permisos:
+
+CREATE USER test_analyst WITH PASSWORD 'test_analyst12345';
+GRANT USAGE ON SCHEMA public TO test_analyst;
+GRANT ALL PRIVILEGES ON ALL TABLES IN SCHEMA public TO test_analyst;
+GRANT ALL PRIVILEGES ON ALL SEQUENCES IN SCHEMA public TO test_analyst;
+
+### 2. Crear tabla:
+
+CREATE TABLE pokemon (
+    poke_id INT PRIMARY KEY,
+    nombre TEXT,
+    tipo_primario TEXT,
+    tipo_secundario TEXT,
+    peso_kg FLOAT,
+    altura_m FLOAT,
+    stat_hp INT,
+    stat_ataque INT,
+    stat_defensa INT,
+    stat_velocidad INT,
+    stat_ataque_especial INT,
+    stat_defensa_especial INT
+);
