@@ -1,0 +1,10 @@
+poke_id,nombre,tipo_primario,tipo_secundario,peso_kg,altura_m,stat_hp,stat_ataque,stat_defensa,stat_velocidad,stat_ataque_especial,stat_defensa_especial,stat_total,nivel
+49,venomoth,bug,poison,12.5,1.5,70,65,60,90,90,75,450,fuerte
+26,raichu,electric,NaN,30.0,0.8,60,90,55,110,90,80,485,fuerte
+36,clefable,fairy,NaN,40.0,1.3,95,70,73,60,95,90,483,fuerte
+6,charizard,fire,flying,90.5,1.7,78,84,78,100,109,85,534,fuerte
+3,venusaur,grass,poison,100.0,2.0,80,82,83,80,100,100,525,fuerte
+28,sandslash,ground,NaN,29.5,1.0,75,100,110,65,45,55,450,fuerte
+18,pidgeot,normal,flying,39.5,1.5,83,80,75,101,70,70,479,fuerte
+31,nidoqueen,poison,ground,60.0,1.3,90,92,87,76,75,85,505,fuerte
+9,blastoise,water,NaN,85.5,1.6,79,83,100,78,85,105,530,fuerte
