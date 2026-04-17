@@ -86,8 +86,11 @@ Para ejecutar el proyecto desde cero, es necesario crear la base de datos, el us
 ### 1. Crear usuario y permisos:
 
 CREATE USER test_analyst WITH PASSWORD 'test_analyst12345';
+
 GRANT USAGE ON SCHEMA public TO test_analyst;
+
 GRANT ALL PRIVILEGES ON ALL TABLES IN SCHEMA public TO test_analyst;
+
 GRANT ALL PRIVILEGES ON ALL SEQUENCES IN SCHEMA public TO test_analyst;
 
 ### 2. Crear tabla:
